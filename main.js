@@ -6,9 +6,8 @@ $.getJSON('https://json.geoiplookup.io/?callback=?', function(data) {
 });
 window.AudioContext = window.AudioContext||window.webkitAudioContext; //fix up prefixing
     // play the saponge.mp3 file
-    var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-    var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple')
-    if (isSafari) {
+    var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor)
+    if ( navigator.vendor.toLowerCase().includes('apple')) {
       document.body.addEventListener('touchstart', function() {
         alert('safari')
         $('#iframeAudio').remove()
