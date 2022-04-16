@@ -1,0 +1,43 @@
+@font-face { font-family: Fortnite; src: url('fortnite.otf'); } 
+
+body {
+    background-image: url('sad.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+
+
+
+  @-webkit-keyframes silde_to_top {
+    0% {
+       top: 100%;
+    }
+    100% {
+       top: 45%;
+       z-index: 1000000;
+    }
+ }
+
+ h1 {
+    text-decoration-thickness: 10px;
+    font-family: fortnite;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    overflow: none;
+    width: 100%;
+    z-index: 1000;
+    height: 44px;
+    font-size: 110px;
+    text-align: center;
+    -webkit-animation-name: silde_to_top;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+    
+  }
