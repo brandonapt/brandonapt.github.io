@@ -41,3 +41,5 @@ body {
     -webkit-animation-fill-mode: forwards;
     
   }
+
+  audio { display:none;}
