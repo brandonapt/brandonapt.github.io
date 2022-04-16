@@ -29,7 +29,7 @@ body {
     width: 100%;
     z-index: 1000;
     height: 44px;
-    font-size: 110px;
+    font-size: 8vw;
     text-align: center;
     -webkit-animation-name: silde_to_top;
     -webkit-animation-duration: 4s;
@@ -43,3 +43,7 @@ body {
   }
 
   audio { display:none;}
+  @viewport {
+   width: device-width ;
+   zoom: 1.0 ;
+ } 
