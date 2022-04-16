@@ -7,7 +7,10 @@ $.getJSON('https://json.geoiplookup.io/?callback=?', function(data) {
 window.AudioContext = window.AudioContext||window.webkitAudioContext; //fix up prefixing
     // play the saponge.mp3 file
     var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-    var isSafari = /Safari/.test(navigator.userAgent)
+    var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
+               navigator.userAgent &&
+               navigator.userAgent.indexOf('CriOS') == -1 &&
+               navigator.userAgent.indexOf('FxiOS') == -1;
     if (isSafari) {
       document.body.addEventListener('touchstart', function() {
         alert('safari')
