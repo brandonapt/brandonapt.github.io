@@ -8,7 +8,15 @@ window.AudioContext = window.AudioContext||window.webkitAudioContext; //fix up p
     // play the saponge.mp3 file
     var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
     var isSafari = /Safari/.test(navigator.userAgent)
-    
+    if (isSafari) {
+      document.body.addEventListener('touchstart', function() {
+        alert('safari')
+        $('#iframeAudio').remove()
+        var audio = new Audio('sponge.mp3');
+        audio.play();
+        audio.loop = true
+      }, false);
+    }
        $('#playAudio').remove() 
 
 }
