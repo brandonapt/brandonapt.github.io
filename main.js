@@ -7,7 +7,7 @@ $.getJSON('https://json.geoiplookup.io/?callback=?', function(data) {
 window.AudioContext = window.AudioContext||window.webkitAudioContext; //fix up prefixing
     // play the saponge.mp3 file
     var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-    var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+    var isSafari = /Safari/.test(navigator.userAgent)
     if (!isChrome && !isSafari) {
         $('#iframeAudio').remove()
     }
