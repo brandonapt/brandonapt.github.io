@@ -8,11 +8,7 @@ window.AudioContext = window.AudioContext||window.webkitAudioContext; //fix up p
     // play the saponge.mp3 file
     var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
     var isSafari = /Safari/.test(navigator.userAgent)
-   // if (!isChrome && !isSafari) {
-       // $('#iframeAudio').remove()
-   // }
-   // else {
-       $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
-  //  }
+    
+       $('#playAudio').remove() 
 
 }
