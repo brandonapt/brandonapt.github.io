@@ -9,5 +9,5 @@ window.onload = function() {
       var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
       $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
       
-  
+  // this is a comment
   }
