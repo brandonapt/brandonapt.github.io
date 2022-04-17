@@ -6,9 +6,8 @@ window.onload = function() {
   });
   window.AudioContext = window.AudioContext||window.webkitAudioContext; //fix up prefixing
       // play the saponge.mp3 file
-      var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
       var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
-      if (!isChrome && !isSafari) {
+      if (!navigator.userAgent.toLowerCase().includes('chrom') && !isSafari) {
           $('#iframeAudio').remove()
       }
       else {
