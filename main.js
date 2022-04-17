@@ -1,4 +1,3 @@
-window.onload = function() {
 
   $.getJSON('https://json.geoiplookup.io/?callback=?', function(data) {
     document.getElementById('ip').innerHTML = "<b>"+data.ip;
@@ -10,4 +9,4 @@ window.onload = function() {
       $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
       
   // this is a comment
-  }
+  
