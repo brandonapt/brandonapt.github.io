@@ -1,7 +1,7 @@
 @font-face { font-family: Fortnite; src: url('fortnite.otf'); } 
 
 body {
-    background-image: url('sad.jpg');
+    background-image: url('sponge.png');
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: 100% 100%;
